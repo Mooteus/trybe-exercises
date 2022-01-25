@@ -35,11 +35,85 @@ sleep $delay
 #Exercicio 05 
 echo "05- Em unix_tests crie o diretório backup"
 mkdir backup
+
 sleep $delay
 
 #Exercicio 06 
 echo "06- mova o arquivo trybe_backup.txt para dentro de backup"
 mv trybe_backup.txt backup
+
+sleep $delay
+
+#Exercicio 07 
+echo "07- dentro de unix_tests crie o diretório backup2"
+mkdir backup2
+
+sleep $delay 
+
+#Exercicio 08
+echo "08- mova o arquivo trybe_backup.txt da pasta backup para a pasta backup2"
+cd backup
+mv trybe_backup.txt ..
+cd .. 
+mv trybe_backup.txt backup2
+
+sleep $delay 
+
+#Exercicio 09 
+echo "09- apagar a pasta backup"
+rm -rf backup
+
+sleep $delay
+
+#Exercicio 10 
+echo "10- renomeie o diretorio backup2 para backup"
+mv backup2 backup
+
+sleep $delay
+
+#Exercicio 11 
+echo "11- veja qual o patch do diretorio atual e liste todos os arquivos dentro dele"
+pwd
+ls -a
+
+sleep $delay
+
+#Exercicio 12 
+echo "12- apague o diretorio backup"
+rm -rf backup 
+
+sleep $delay
+
+#Exercicio 13 
+echo "13- limpe o terminal"
+clear
+
+#Criando arquivo skills.txt
+touch skills.txt
+echo "Internet
+Unix
+Bash
+HTML
+CSS
+JavaScript
+React
+SQL" >> skills.txt
+
+#Exercicio 14 
+echo "14- Mostre as 5 primeiras linhas de skills.txt"
+head -5 skills.txt
+
+sleep $delay
+
+#Exercicio 15
+echo "15- Mostre as 4 ultimas linhas de skills.txt"
+tail -4 skills.txt
+
+sleep $delay
+
+#Exercicio 16
+echo "16- Apague todos os arquivos .txt"
+rm *.txt
 
 sleep $delay
 
