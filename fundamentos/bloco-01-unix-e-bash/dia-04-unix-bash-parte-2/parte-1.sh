@@ -9,8 +9,6 @@ fi
 #Criar a Unix_tests
 mkdir unix_tests
 
-sleep $delay
-clear
 #Exercicio 1 
 echo "vá até a pasta unix_tests"
 cd unix_tests
