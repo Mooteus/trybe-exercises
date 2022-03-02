@@ -101,3 +101,5 @@ sort -d bunch_of_things.txt
 sleep $delay
 clear
 
+#sair da unix_tests
+cd .. 
