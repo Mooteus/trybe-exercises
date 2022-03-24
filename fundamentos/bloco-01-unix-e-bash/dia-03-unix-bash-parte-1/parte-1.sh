@@ -8,50 +8,56 @@ rm -rf unix_tests
 fi
 
 #Exercicio 01
-echo "01- Crie o diretório unix_tests e navegue até ele"
+echo "01 - Create the unix_tests directory and navigate to it"
 mkdir unix_tests
 cd unix_tests
 
 sleep $delay
 clear
+
 #Exercicio 02
-echo "02- Crie o arquivo trybe.txt"
+echo "02 - Create trybe.txt file"
 touch trybe.txt 
 
 sleep $delay
 clear
+
 #Exercicio 03
-echo "03- Copie o arquivo trybe.txt com o nome trybe_backup.txt"
+echo "03 - Copy the trybe.txt file with the name trybe_backup.txt"
 cp trybe.txt trybe_backup.txt
 
 sleep $delay
 clear
+
 #Exercicio 04
-echo "04- Renomeie o arquivo trybe.txt"
+echo "04 - Rename the trybe.txt file"
 mv trybe.txt trybe2.txt
 
 sleep $delay
 clear
+
 #Exercicio 05 
-echo "05- Em unix_tests crie o diretório backup"
+echo "05 - In unix_tests create the backup directory"
 mkdir backup
 
 sleep $delay
 clear
+
 #Exercicio 06 
-echo "06- mova o arquivo trybe_backup.txt para dentro de backup"
+echo "06 - Move trybe_backup.txt file into backup"
 mv trybe_backup.txt backup
 
 sleep $delay
 clear
+
 #Exercicio 07 
-echo "07- dentro de unix_tests crie o diretório backup2"
+echo "07 - Inside unix_tests create backup2 directory"
 mkdir backup2
 
 sleep $delay 
 clear
 #Exercicio 08
-echo "08- mova o arquivo trybe_backup.txt da pasta backup para a pasta backup2"
+echo "08 - Move the trybe_backup.txt file from the backup folder to the backup2 folder"
 cd backup
 mv trybe_backup.txt ..
 cd .. 
@@ -59,36 +65,40 @@ mv trybe_backup.txt backup2
 
 sleep $delay 
 clear
+
 #Exercicio 09 
-echo "09- apagar a pasta backup"
+echo "09 - delete the backup folder"
 rm -rf backup
 
 sleep $delay
 clear
 #Exercicio 10 
-echo "10- renomeie o diretorio backup2 para backup"
+echo "10- rename backup2 directory to backup"
 mv backup2 backup
 
 sleep $delay
 clear
+
 #Exercicio 11 
-echo "11- veja qual o patch do diretorio atual e liste todos os arquivos dentro dele"
+echo "11 - see what the patch is in the current directory and list all the files inside it"
 pwd
 ls -a
 
 sleep $delay
 clear
+
 #Exercicio 12 
-echo "12- apague o diretorio backup"
+echo "12 - delete the backup directory"
 rm -rf backup 
 
 sleep $delay
 clear
+
 #Exercicio 13 
-echo "13- limpe o terminal"
+echo "13 - clean the terminal"
 clear
 
-#Criando arquivo skills.txt
+#Create skills.txt
 touch skills.txt
 echo "Internet
 Unix
@@ -100,22 +110,24 @@ React
 SQL" >> skills.txt
 
 #Exercicio 14 
-echo "14- Mostre as 5 primeiras linhas de skills.txt"
+echo "14 - Show the first 5 lines of skills.txt"
 head -5 skills.txt
 
 sleep $delay
 clear
+
 #Exercicio 15
-echo "15- Mostre as 4 ultimas linhas de skills.txt"
+echo "15 - Show the last 4 lines of skills.txt"
 tail -4 skills.txt
 
 sleep $delay
 clear
 #Exercicio 16
-echo "16- Apague todos os arquivos .txt"
+echo "16- Delete all .txt files"
 rm *.txt
 
 sleep $delay
 clear
-#sair da unix_tests
+
+#exit unix_tests
 cd .. 

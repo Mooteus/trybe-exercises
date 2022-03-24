@@ -11,29 +11,30 @@ fi
 mkdir unix_tests
 
 #Exercicio 1 
-echo "01- No diretório unix_tests baixe o arquivo com os paises do mundo"
+echo "01 - In the unix_tests directory download the file with the countries of the world"
 cd unix_tests
 curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
 
 sleep $delay
 
 #Exercicio 2
-echo "02- Mostre o conteúdo do arquivo countries.txt"
+echo "02 - Show the contents of the countries.txt file"
 cat countries.txt
 
 sleep $delay 
 
 #Exercicio 3 
-echo "03- Mostre o conteúdo de countries.txt página por página até encontrar a Zambia"
-echo "\n\nPressione a barra de espaço para avançar as paginas e Q para finalizar"
+echo "03 - Show the content of countries.txt page by page until you find Zambia"
+echo "\n\nPress the spacebar to advance pages and Q to end"
 sleep $delay 
 less countries.txt
 
 sleep $delay 
 clear 
 #Exercicio 4 
-echo "04- Mostre novamente o conteúdo do arquivo página por página mas agora use um comando para buscar por Zambia"
-echo "\nPressione / e procure pela palavra Zambia e pressione Q para sair"
+echo "04 - Show again the contents of the file page by page but now use a command to search for Zambia"
+echo "\nPressione / 
+and search for the word Zambia and press Q to exit"
 sleep $delay 
 
 less countries.txt 
@@ -42,13 +43,13 @@ sleep $delay
 clear
 
 #Exercicio 5 
-echo "05- Busque a palavra Brazil dentro de countries.txt"
+echo "05 - Search for the word Brazil within countries.txt"
 grep -i Brazil countries.txt 
 
 sleep $delay 
 clear
 #Exercicio 6 
-echo "06- Busque novamente pela palabra Brazil mas agora usando o lower case"
+echo "06 - Search again for the word Brazil but now using the lower case"
 grep -i brazil countries.txt
 
 sleep $delay 
@@ -65,7 +66,7 @@ I'm sure you've heard it all before, but you never really had a doubt" >> phrase
 clear 
 
 #Exercicio 7 
-echo "07- Busque pelas frases que não contenham a palavra ALL"
+echo "07 - Search for phrases that do not contain the word ALL"
 grep -i -v all phrases.txt
 
 sleep $delay
