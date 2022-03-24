@@ -10,7 +10,7 @@ fi
 mkdir unix_tests
 
 #Exercicio 1 
-echo "01 - Va ate a pasta unix_tests"
+echo "vá até a pasta unix_tests"
 cd unix_tests
 
 sleep $delay
