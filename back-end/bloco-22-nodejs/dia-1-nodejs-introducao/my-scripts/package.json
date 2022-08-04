@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "imc": "node imc.js",
-    "speed": "node speed.js"
+    "speed": "node speed.js",
+    "guess": "node guess.js"
   },
   "author": "moteus",
   "license": "ISC",
