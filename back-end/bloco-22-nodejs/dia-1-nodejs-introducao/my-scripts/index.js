@@ -5,6 +5,7 @@ Escolha qual programa deseja executar:
 [1] - calculadora imc
 [2] - guess game
 [3] - velocidade media
+[4] - fatorial
 `);
 
 switch(choice) {
@@ -14,6 +15,8 @@ switch(choice) {
     return require('./guess');
   case 3 : 
     return require('./speed');;
+  case 4 : 
+    return require('./factorial');
   default:
     return false;
 }
