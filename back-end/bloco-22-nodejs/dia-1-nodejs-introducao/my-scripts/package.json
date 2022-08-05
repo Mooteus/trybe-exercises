@@ -8,7 +8,8 @@
     "start": "node index.js",
     "imc": "node imc.js",
     "speed": "node speed.js",
-    "guess": "node guess.js"
+    "guess": "node guess.js",
+    "factorial": "node factorial.js"
   },
   "author": "moteus",
   "license": "ISC",
